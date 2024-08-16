@@ -5,16 +5,18 @@
 
 # This configuration is intended for my personal use.
 # It is to be reproducable on the same machine (i.e. Lenovo Thinkpaad T480).
+
+# WARNING: Paths SHOULD always be absolute
 { lib, pkgs, ... }:
 
-let files = import ./lib/files.nix; in
+let files = import /etc/nixos/lib/files.nix; in
 {
   imports =
     lib.lists.flatten
     [ # Include custom modules
-      (files.extFiles ./modules "nix")
+      (files.extFiles /etc/nixos/modules "nix")
       # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
     ];
 
   boot.loader = {
@@ -42,6 +44,7 @@ let files = import ./lib/files.nix; in
   };
 
   # WARNING: broken, set manually for now
+  #
   # grant user `ars` read/write permission to /etc/nixos/*
   #
   # system.userActivationScripts = {
