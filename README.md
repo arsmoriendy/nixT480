@@ -10,7 +10,7 @@ Before setting up make sure:
 2. To have permissions to `/etc/nixos`[^1]
 3. `/etc/nixos/` is empty (`rm /etc/nixos/* -rf`)
 
-Finally run:
+Finally clone and `cd` into this repo and run:
 ```bash
 stow .
 ```
