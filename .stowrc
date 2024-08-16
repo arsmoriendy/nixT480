@@ -3,3 +3,4 @@
 --ignore=README.md
 --ignore=\.git
 --ignore=\.stowrc
+--no-folding
