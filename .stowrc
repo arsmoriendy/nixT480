@@ -1,0 +1,5 @@
+--target=/etc/nixos
+--ignore=.*\-example\.nix
+--ignore=README.md
+--ignore=\.git
+--ignore=\.stowrc
