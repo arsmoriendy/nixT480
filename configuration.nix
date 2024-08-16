@@ -84,6 +84,7 @@ let files = import /etc/nixos/lib/files.nix; in
     obsidian
     mpv
     gh
+    stow
 
     # common packages
     fzf
