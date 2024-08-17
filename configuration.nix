@@ -146,6 +146,9 @@ let files = import /etc/nixos/lib/files.nix; in
       enable = true;
       # Don't let sftp read .bashrc or any shell init files
       sftpServerExecutable = "internal-sftp";
+      settings = {
+        PasswordAuthentication = false;
+      };
     };
 
     dnscrypt-proxy2 = {
