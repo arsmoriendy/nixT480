@@ -85,6 +85,7 @@ let files = import /etc/nixos/lib/files.nix; in
     mpv
     gh
     stow
+    obs-studio
 
     # common packages
     fzf
