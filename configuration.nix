@@ -86,6 +86,7 @@ let files = import /etc/nixos/lib/files.nix; in
     gh
     stow
     obs-studio
+    lazygit
 
     # common packages
     fzf
