@@ -74,7 +74,6 @@ let files = import /etc/nixos/lib/files.nix; in
 
   environment.systemPackages = with pkgs; [
     # my packages
-    neovim
     chezmoi
     wezterm
     firefox
@@ -115,6 +114,12 @@ let files = import /etc/nixos/lib/files.nix; in
 
   programs = {
     fish.enable = true;
+
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+      withNodeJs = true;
+    };
 
     sway = {
       enable = true;
