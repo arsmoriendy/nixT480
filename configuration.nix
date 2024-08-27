@@ -28,6 +28,7 @@ let files = import /etc/nixos/lib/files.nix; in
       efiSupport = true;
       device = "nodev";
       useOSProber = true;
+      splashImage = null;
     };
   };
 
