@@ -145,6 +145,10 @@ let files = import /etc/nixos/lib/files.nix; in
       enable = true;
       plugins = with pkgs.xfce; [ tumbler ];
     };
+
+    ssh = {
+      startAgent = true;
+    };
   };
 
   # wayland wl-roots screen recording/sharing
