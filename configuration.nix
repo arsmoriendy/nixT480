@@ -131,6 +131,7 @@ let files = import /etc/nixos/lib/files.nix; in
         slurp
         wl-clipboard
         swaybg
+        swaylock
         eww
         dunst
         brightnessctl
