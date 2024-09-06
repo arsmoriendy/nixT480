@@ -139,6 +139,7 @@ let files = import /etc/nixos/lib/files.nix; in
         polkit_gnome
         gnome-themes-extra
         waybar
+        wdisplays
       ];
     };
 
