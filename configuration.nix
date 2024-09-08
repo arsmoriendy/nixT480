@@ -104,6 +104,7 @@ let files = import /etc/nixos/lib/files.nix; in
     ncdu
     parted
     cryptsetup
+    gnupg
 
     # language packages
     gcc
@@ -151,6 +152,8 @@ let files = import /etc/nixos/lib/files.nix; in
     ssh = {
       startAgent = true;
     };
+
+    gnupg.agent.enable = true;
   };
 
   # wayland wl-roots screen recording/sharing
