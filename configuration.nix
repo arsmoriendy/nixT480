@@ -70,6 +70,8 @@ let files = import /etc/nixos/lib/files.nix; in
     ];
   };
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # Allow unfree packages/derivations
   nixpkgs.config.allowUnfree = true;
 
