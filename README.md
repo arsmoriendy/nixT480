@@ -15,6 +15,9 @@ Finally clone and `cd` into this repo and run:
 stow .
 ```
 
+> [!WARNING]
+> Stow will ignore `*-example.nix` files
+
 ## ACL Setup
 Run the following command, make sure acl is enabled in your filesystem:
 
