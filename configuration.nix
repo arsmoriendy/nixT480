@@ -42,6 +42,10 @@ let files = import /etc/nixos/lib/files.nix; in
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
     shell = pkgs.fish;
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAbRrMCGtaQt0AB/vsVIxlmCnv/srt6GMHZMhviidzbw ars@arch2400g"
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHsOmn6r9Km6i6VDo8vhSbVK/TcrbeJQaRz01fDaG49X ars@nixT480"
+    ];
   };
 
   # WARNING: broken, set manually for now
