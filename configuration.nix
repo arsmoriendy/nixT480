@@ -111,6 +111,7 @@ let files = import /etc/nixos/lib/files.nix; in
     parted
     cryptsetup
     gnupg
+    nmap
 
     # language packages
     gcc
