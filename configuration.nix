@@ -112,6 +112,7 @@ let files = import /etc/nixos/lib/files.nix; in
     cryptsetup
     gnupg
     nmap
+    qrencode
 
     # language packages
     gcc
