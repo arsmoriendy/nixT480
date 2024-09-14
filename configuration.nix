@@ -94,6 +94,7 @@ let files = import /etc/nixos/lib/files.nix; in
     obs-studio
     lazygit
     shotcut
+    zoxide
 
     # common packages
     fzf
