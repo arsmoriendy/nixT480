@@ -95,6 +95,7 @@ let files = import /etc/nixos/lib/files.nix; in
     lazygit
     shotcut
     zoxide
+    zellij
 
     # common packages
     fzf
