@@ -204,6 +204,11 @@ let files = import /etc/nixos/lib/files.nix; in
       systemService = false;
       dataDir = /home/ars;
     };
+
+    postgresql = {
+      enable = true;
+      enableTCPIP = true;
+    };
   };
 
   virtualisation.docker.enable = true;
