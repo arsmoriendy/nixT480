@@ -96,6 +96,7 @@ let files = import /etc/nixos/lib/files.nix; in
     shotcut
     zoxide
     zellij
+    zathura
 
     # common packages
     fzf
